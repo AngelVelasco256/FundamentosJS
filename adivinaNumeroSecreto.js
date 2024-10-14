@@ -10,7 +10,7 @@
 //EJERCICIO EN TERMINAL
 process.stdout.write('dime el numero: ');
 process.stdin.on('data', function(data){
-  let numeroTecleado = data;
+  let numeroTecleado = parseInt(data);
   let numeroSecreto = Math.floor(Math.random() * 10);
   if (numeroTecleado == numeroSecreto) {
     process.stdout.write(`Felicidades, el numero ${numeroTecleado} es correcto \n`);
