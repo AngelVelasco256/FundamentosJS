@@ -1,19 +1,20 @@
-//Creando un array con Array()
+//Creando un array con Array() (palabra reservada)
 //Arrays de Strings
 const frutas = Array('Mango', 'Sandia', 'Platano', 'Fresas')
 console.log(frutas)
 
-//Arrays de un solo numero (NO ES CORRECTO)
-const justOneNumber = Array(12)
+//Array de un solo numero (NO ES CORRECTO)
+//creara un array con Items vacios
+const soloUnNumero = Array(12)
 console.log(justOneNumber)
 
-//Arrays de Numbers
-const numbers = Array(1, 2, 3, 4, 5, 6)
+//Array de Numbers
+const numeros = Array(1, 2, 3, 4, 5, 6)
 console.log(numbers)
 
 //Creando Arrays con Array literal syntax
 //Array de UN SOLO NUMERO
-const oneNumber = [5]
+const unNumero = [5]
 console.log(oneNumber)
 
 //Array Vacio
@@ -30,7 +31,8 @@ const mixArray = [
   58,
   'Hola mundo',
   {
-    name: 'Angel', edad: 21
+    name: 'Angel',
+    edad: 21
   },
   '#ffff'
 ]
@@ -42,16 +44,25 @@ console.log(marcasAutos[3])
 //Como saber el tamaño (la cantidad de elementos dentro de un array) propiedad .length
 console.log(mixArray.length)
 
+
+
+
+//MUTABILIDAD E INMUTABILIDAD
 //MUTABILIDAD
+//Se trata de alterar el array original, pues tras el tratamiento que le hagamos, tendremos un array diferente al original (modificar directamente el array original)
+const frutas = Array('Mango', 'Sandia', 'Platano', 'Fresas')
 frutas.push('Guayabas')
 console.log(frutas)
 
 //INMUTABILIDAD
+//En este caso, hablamos de hacer un copia del array original en uno nuevo en el cual haremos el tratamiento de sus elemento, esto asegura el array original
+const frutas = Array('Mango', 'Sandia', 'Platano', 'Fresas')
 const newFrutas = frutas.concat(['Uvas', 'Naranjas'])
 console.log(frutas)
 console.log(newFrutas)
 
 //Verificar que un Array es Array con Array.isArray()
+const marcasAutos = ['Honda', 'Mitsubishi', 'Nissan', 'Ferrari', 'Toyota']
 const verificacion = Array.isArray(marcasAutos)
 console.log(verificacion)
 
