@@ -2,7 +2,6 @@
 //1. Copiar arrays
 const numerosPares = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
 const copiaNumerosPares = [...numerosPares]
-
 console.log(numerosPares)
 console.log(copiaNumerosPares)
 
